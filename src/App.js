@@ -11,6 +11,9 @@ import {
   Text,
   View
 } from 'react-native';
+import DateTimeSelector from './DateTimeSelector';
+import EmailButton from './EmailButton';
+
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -33,6 +36,8 @@ export default class App extends Component<Props> {
         <Text style={styles.instructions}>
           {instructions}
         </Text>
+        <DateTimeSelector />
+        <EmailButton />
       </View>
     );
   }
